@@ -23,6 +23,7 @@ public class App extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 			stage.setTitle("Into The Abyss");
 			stage.setScene(new Scene(root, 800, 600));
+
 			stage.show();
 			stage.setOnCloseRequest(event -> quit(stage));
 		} catch (Exception e) {
