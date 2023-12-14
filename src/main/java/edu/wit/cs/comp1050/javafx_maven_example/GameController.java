@@ -12,21 +12,19 @@ import javafx.scene.shape.Rectangle;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.ResourceBundle;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
-public class GameController extends Application {
-
-	public static void main(String[] args) {
-		System.out.println(args);
-		launch(args);
-	}
+public class GameController implements Initializable {
 
 	// make it a class level variable
 	public static final int rows = 3;
@@ -45,9 +43,14 @@ public class GameController extends Application {
 	double posY = 520;
 	double speedX = 2.5;
 	double speedY = 2.5;
-
-	public void start(@SuppressWarnings("exports") Stage primaryStage) {
+	@FXML
+	private ImageView gameImage;
+	Image myImage = new Image("C:\\Users\\Thomas Do\\git\\ArkanoidProject\\Pictures\\game.png");
+	@Override
+	public void initialize(URL url, ResourceBundle resourceBundle) {
+		Stage primaryStage = new Stage();
 		root = new Pane();
+		gameImage.setImage(myImage);
 		// ArrayList<Blocks>block = new
 		// ArrayList<>();
 		// this.block=block;
@@ -141,10 +144,10 @@ public class GameController extends Application {
 					move();
 					colision();
 					B.setCenterX(posX);
-					System.out.println(posX);
-					System.out.println(B.getCenterX());
+//					System.out.println(posX);
+//					System.out.println(B.getCenterX());
 					B.setCenterY(posY);
-					System.out.println(B.getCenterY());
+//					System.out.println(B.getCenterY());
 				}
 			}
 		}.start();

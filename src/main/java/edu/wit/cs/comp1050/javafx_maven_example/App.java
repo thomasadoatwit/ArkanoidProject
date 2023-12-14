@@ -2,6 +2,7 @@ package edu.wit.cs.comp1050.javafx_maven_example;
 
 import javafx.application.Application;
 
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

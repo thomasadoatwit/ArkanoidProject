@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="600.0" prefWidth="800.0"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="edu.wit.cs.comp1050.javafx_maven_example.Controller">
+	<children>
+		<ImageView fx:id="myimage" blendMode="HARD_LIGHT"
+			fitHeight="600.0" fitWidth="800.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@../../../../../../../../Pictures/space%20(1).png" />
+			</image>
+		</ImageView>
+		<Text fill="WHITE" layoutX="16.0" layoutY="82.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" text="Into The Abyss"
+			textAlignment="CENTER" wrappingWidth="767.13671875">
+			<font>
+				<Font name="Agency FB" size="62.0" />
+			</font>
+		</Text>
+		<Button fx:id="playbtn" layoutX="308.0" layoutY="243.0"
+			maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+			minWidth="-Infinity" mnemonicParsing="false"
+			onAction="#switchScenePlay" prefHeight="115.0" prefWidth="183.0"
+			text="PLAY">
+			<font>
+
+				<Font name="Wingdings 3" size="16.0" />
+			</font>
+
+		</Button>
+		<Button fx:id="optionbtn" layoutX="323.0" layoutY="375.0"
+			mnemonicParsing="false" onAction="#switchSceneOption"
+			prefHeight="97.0" prefWidth="155.0" text="OPTIONS">
+			<font>
+				<Font name="Wingdings 3" size="16.0" />
+			</font>
+		</Button>
+		<Button fx:id="quitbtn" layoutX="341.0" layoutY="488.0"
+			mnemonicParsing="false" onAction="#quitAction" prefHeight="73.0"
+			prefWidth="119.0" text="QUIT">
+			<font>
+				<Font name="Wingdings 3" size="16.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>
