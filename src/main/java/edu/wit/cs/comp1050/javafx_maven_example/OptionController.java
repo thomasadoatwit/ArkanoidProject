@@ -44,7 +44,7 @@ public class OptionController {
 		stage.show();
 
 	}
-
+	
 	@FXML
 	public void initialize() {
 		System.out.println("Options");

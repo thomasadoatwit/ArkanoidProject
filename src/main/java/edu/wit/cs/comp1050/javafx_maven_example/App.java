@@ -1,6 +1,7 @@
 package edu.wit.cs.comp1050.javafx_maven_example;
 
 import javafx.application.Application;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,6 +23,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class App extends Application {
 
 	private static Scene scene;
+	public static Parent root;
 
 	@Override
 	public void start(Stage stage) throws IOException {
@@ -52,4 +54,3 @@ public class App extends Application {
 	}
 
 }
-	

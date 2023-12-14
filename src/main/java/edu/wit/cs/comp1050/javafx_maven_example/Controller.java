@@ -2,6 +2,7 @@ package edu.wit.cs.comp1050.javafx_maven_example;
 
 import java.io.File;
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -92,8 +93,9 @@ public class Controller implements Initializable {
 		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
-		stage.show();
-
+//		stage.show();
+		
+		
 	}
 
 	@FXML
@@ -104,6 +106,10 @@ public class Controller implements Initializable {
 		stage.setScene(scene);
 		mp.pause();
 		stage.show();
+		
 	}
+	public Stage getStage(){
+		  return stage;
+		}
 
 }
